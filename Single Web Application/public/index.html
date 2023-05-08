@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat Room </title>
+    <link rel="stylesheet" type="text/css" href="css/chatroom.css" >
+    <link rel="stylesheet" type="text/css" href="css/register.css" >
+    <link rel="stylesheet" type="text/css" href="css/login.css" >
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <!-- Room Chat -->
+    <div id= "roomchat" class="roomchat">
+
+      <!-- Navbar -->
+      <div class="navbar">
+
+        <!-- Logo and Title -->
+        <img alt="website logo" class="logo" src="images/chatlogo.png"> 
+        <h1 class="title">Online Chat</h1>
+
+        <!-- User Info -->
+        <p class="username_label">Username: </p>
+        <p class="username" id="username"> </p>
+
+        <!-- Change Profile Picture -->
+        <p class="changPicText"> Change your Profile Picture: </p>
+        <input id="fileImage" class="fileImage" type="file" name="file" accept="image/*"/>
+        <button id="uploadImage" class="uploadImage" type="button"> Send </button>
+        <img alt="profile picture" src="uploads/default.png" id="profilePic" class="profilePic">
+
+        <!-- Log out button -->
+        <button id="logout" class="logout" type="submit"> Log out </button>
+      </div>
+
+      <!-- chat box -->
+      <div class="chat" id="chat"> </div>
+      <br>
+      <!-- Send message -->
+      <form class="chatForm" id="chatForm">
+          <input name="message" type="text" class="meassageUser" id="meassageUser" placeholder="Type a message here...">
+          <button class="sendMessage"  id="sendMessage" type="submit"> Send </Button>
+      </form>
+      
+
+    </div>
+
+    <!-- Register -->
+		<div id="register_part" class="register">
+      <br>
+			<form>
+				<div class="register_form">
+				
+					<p class="title_register">Register<p>
+					
+					<hr>
+          <label class="labelRegister" >Username</label>
+					<input class="inputRegister" type="text" placeholder="Enter a username" name="username" id="username_register" required>
+          <label class="labelRegister" >Password</label>
+					<input class="inputRegister" type="password" placeholder="Enter a password" name="password" id="password_register"
+           required onkeyup="validation_register()">
+          <label class="labelRegister" >Confirm Password</label>
+					<input class="inputRegister" type="password" placeholder="Confirm Password" name="password_confirm" id="password_confirm" 
+          required onkeyup="validation_register()">		
+					<button class="buttonRegister" id="register" type="button">  Register </Button> 
+          <p id="error_register"></p>
+				</div>
+			</form>	
+
+			<!-- Change to login field  -->
+			<div class="loginLink">
+        <hr>
+        <p class="info"> Have already an account? Click on the login button to go to the login field</p>
+        <button class="register_login" type="submit" id="register_login">  Login </Button> 
+			</div>
+		
+		</div>
+
+    <!-- Login -->
+    <div id="login_part" class="login">
+      <br>
+      <form>
+        <div class="login_form">
+          <p class="title_login">Login<p>
+          <hr>
+          <label class="labelLogin" >Username</label>
+          <input class="inputLogin" type="text" placeholder="Enter a username" name="username" id="username_login" required>
+          <label class="labelLogin" >Password</label>
+          <input  class="inputLogin" type="password" placeholder="Enter a password" name="password" id="password_login" required>	
+    
+          <button class="login_button" id="login" type="button"> Login </Button> 
+          <p id="error_login"></p>
+          
+        </div>
+      </form>  
+  
+      <!-- Change to register field  -->
+      <div class="registerLink">
+        <hr>
+        <p class="info"> Don't have an account? Click on the register button to go to the register field</p>
+        <button class="login_register" type="submit" id="login_register">  Register </Button>  
+      </div>
+          
+    </div>
+
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="chatroom.js"></script>
+
+  </body>
+</html>

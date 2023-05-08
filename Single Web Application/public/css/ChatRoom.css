@@ -1,0 +1,156 @@
+.roomchat{
+    display: none;
+}
+
+body{
+	background-color:gray;
+}
+/* The header background*/
+.navbar{
+	overflow: hidden;
+	background-color: black;
+}
+/* The logo*/
+.logo{
+	width:100px;
+	margin-top: 1%;
+	display:block;
+	float:left;
+    margin-left: -90px;
+	padding: 0px 100px;
+}
+/* The title of the website*/
+.title{
+    color: #0DB7DA;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace ;
+    float:left;
+    display:block;
+    padding: 0px 20px;
+    margin-left: -90px;
+    margin-top: 1%;
+    border-right: 1px solid white;
+
+}
+/* The logout button*/
+.logout{
+    background-color: darkred;
+    width:70px;
+    height: 50px;
+    float:left;
+    color: white;
+    margin-left: 1410px;
+    margin-top: -5%;
+    
+}
+/* The username */
+.username{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace ;
+    display:block;
+    float: left;
+    margin-left: -50px;
+    margin-top: 2%;
+    
+
+}
+
+.username_label{
+    color: #0DB7DA;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace ;
+    float: left;
+    display:block;
+    margin-left: -40px;
+    padding: 0px 60px;
+    margin-top: 2%;
+}
+
+/* The chat box*/
+.chat{
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    height: 500px;
+    width: 1000px;
+    border: 2px solid #0DB7DA;
+    overflow: auto;
+    border-bottom: 6px solid #0DB7DA;
+}
+/* The input text to write a message*/
+.meassageUser{
+    border-radius: 6px;
+    border: 1px solid #0DB7DA;
+    margin-left: 230px;
+    width: 950px;
+    height: 20px;
+}
+/*The send button to send a message*/
+.sendMessage{
+    color: black;
+    background: #0DB7DA;
+    border: 2px solid #0DB7DA;
+    border-radius: 6px;
+    margin-left: 30px;
+    font-size: 15px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+/* The message that you send to the other users*/
+.myMessage {
+    background-color: #0DB7DA;
+    padding: 5px;
+}
+/* The message that the other users sent to you*/
+.yourMessage {
+    background-color:mediumpurple;
+    padding: 5px;
+}
+/*Message that is displayed when connecting*/
+.connected{
+    background-color:#40E0D0;
+    padding: 5px;
+}
+/*Message that is displayed when a user disconnects*/
+.disconnects{
+    background-color:red;
+    padding: 5px;
+}
+/* The choose file button*/
+.fileImage{
+    margin-top: 1%;
+    color: white;
+    margin-left: 50px;
+    float: left;
+    
+}
+/* The send button to upload the image*/
+.uploadImage{
+    margin-top: 1%;
+    background: #0DB7DA;
+    border: 2px solid #0DB7DA;
+    border-radius: 6px;
+    float: left;
+}
+/* The change profile picture title*/
+.changPicText{
+    color: #0DB7DA;
+    font-size: 15px;
+    margin-left: 800px;
+    
+
+}
+/* The profile picture image*/
+.profilePic{
+    display:flex;
+    border-radius: 50%;
+    margin-left: 1200px;
+    width: 70px;
+    margin-top: -2%;
+
+}
+

@@ -1,0 +1,79 @@
+.register{
+    display: block;
+}
+
+/* Background of the register form*/
+.register_form {
+    padding: 10px 50px;
+    width: 60%;
+    margin-left: 17%;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #0DB7DA;
+    font-family: 'Courier New', Courier, monospace ;
+}
+/*Button to register*/
+.buttonRegister {
+    background-color: #0DB7DA;
+    color: black;
+    padding: 5px 405px;
+    cursor: pointer;
+    font-size: 25px;    
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+/* Background of the change to login field*/
+.loginLink {
+    padding: 10px 50px;
+    width: 60%;
+    margin-left: 17%;
+    background-color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.title_register{
+    font-size: 50px;
+    text-align: center;
+}
+
+.inputRegister{
+    width: 100%;
+    padding:10px;
+    margin: 6px 0px 20px 0px;
+    background: white;
+    font-size: 20px;
+    
+}
+/*Button to go to the login field*/
+.register_login{
+    background-color: #0DB7DA;
+    color: black;
+    font-size: 20px;    
+    font-family: 'Courier New', Courier, monospace; 
+    padding: 5px 55px;
+    cursor: pointer;
+}
+
+.labelRegister{
+    font-size: 30px;
+}
+
+
+/*Message asking the users to click on the login button if they have already registered.*/
+.info{
+    color: #0DB7DA;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 14px;
+}
+/*Error message*/
+#error_register{
+    color: #0DB7DA;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 14px;
+    background-color: black;
+    text-align: center;
+}
