@@ -19,7 +19,7 @@ const connectionPool = mysql.createPool({
     connectionLimit: 1,
     host: "localhost",
     user: "Seb",
-    password: "1234",
+    password: "*****",
     database: "chatroom",
     port: 8111,
     debug: false
